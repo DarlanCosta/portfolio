@@ -2,12 +2,12 @@ import React from "react";
 import Image from "next/image";
 
 const skills = [
+  { skill: "JavaScript" },
+  { skill: "TypeScript" },
   { skill: "React" },
   { skill: "React Native" },
   { skill: "Node.js" },
   { skill: "Next.js" },
-  { skill: "JavaScript" },
-  { skill: "TypeScript" },
   { skill: "HTML" },
   { skill: "CSS" },
   { skill: "Git" },
