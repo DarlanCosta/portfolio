@@ -1,8 +1,8 @@
-'use client'; // this is a client component
-import React from 'react';
-import Image from 'next/image';
-import { Link } from 'react-scroll/modules';
-import { HiArrowDown } from 'react-icons/hi';
+"use client"; // this is a client component
+import React from "react";
+import Image from "next/image";
+import { Link } from "react-scroll/modules";
+import { HiArrowDown } from "react-icons/hi";
 
 const HeroSection = () => {
   return (
@@ -22,12 +22,12 @@ const HeroSection = () => {
             Hi, I&#39;m Darlan!
           </h1>
           <p className="text-lg mt-4 mb-6 md:text-2xl">
-            I&#39;m a{' '}
+            I&#39;m a{" "}
             <span className="font-semibold text-sky-600">
-              Software Developer{' '}
+              Software Developer{" "}
             </span>
-            based in Toronto, ON. Crafting innovative solutions that empower
-            businesses and transform user experiences.
+            based in Franca, São Paulo. Crafting innovative solutions that
+            empower businesses and transform user experiences.
           </p>
           <Link
             to="projects"

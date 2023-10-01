@@ -1,24 +1,24 @@
-import React from 'react';
-import Image from 'next/image';
+import React from "react";
+import Image from "next/image";
 
 const skills = [
-  { skill: 'React' },
-  { skill: 'React Native' },
-  { skill: 'Node.js' },
-  { skill: 'Next.js' },
-  { skill: 'JavaScript' },
-  { skill: 'TypeScript' },
-  { skill: 'HTML' },
-  { skill: 'CSS' },
-  { skill: 'Git' },
-  { skill: 'GitHub' },
-  { skill: 'Docker' },
-  { skill: 'PostgreSQL' },
-  { skill: 'Oracle' },
-  { skill: 'MySQL' },
-  { skill: 'MongoDB' },
-  { skill: 'Redis' },
-  { skill: 'AWS' },
+  { skill: "React" },
+  { skill: "React Native" },
+  { skill: "Node.js" },
+  { skill: "Next.js" },
+  { skill: "JavaScript" },
+  { skill: "TypeScript" },
+  { skill: "HTML" },
+  { skill: "CSS" },
+  { skill: "Git" },
+  { skill: "GitHub" },
+  { skill: "Docker" },
+  { skill: "PostgreSQL" },
+  { skill: "Oracle" },
+  { skill: "MySQL" },
+  { skill: "MongoDB" },
+  { skill: "Redis" },
+  { skill: "AWS" },
 ];
 
 const AboutSection = () => {
@@ -36,11 +36,11 @@ const AboutSection = () => {
               What can I do to help your business?
             </h1>
             <p>
-              Hi, my name is Darlan, and I am a{' '}
-              <span className="font-bold">versatile</span>,{' '}
-              <span className="font-bold">innovative</span>, and a real{' '}
+              Hi, my name is Darlan, and I am a{" "}
+              <span className="font-bold">versatile</span>,{" "}
+              <span className="font-bold">innovative</span>, and a real{" "}
               <span className="font-bold">team player</span> software developer
-              located in Toronto, ON.
+              located in Franca, São Paulo.
             </p>
             <br />
             <p>
