@@ -1,11 +1,11 @@
-'use client'; // this is a client component
-import React, { useEffect } from 'react';
-import { useState } from 'react';
-import { Link } from 'react-scroll/modules';
-import { usePathname } from 'next/navigation';
-import { useTheme } from 'next-themes';
-import { RiMoonFill, RiSunLine } from 'react-icons/ri';
-import { IoMdMenu, IoMdClose } from 'react-icons/io';
+"use client"; // this is a client component
+import React, { useEffect } from "react";
+import { useState } from "react";
+import { Link } from "react-scroll/modules";
+
+import { useTheme } from "next-themes";
+import { RiMoonFill, RiSunLine } from "react-icons/ri";
+import { IoMdMenu, IoMdClose } from "react-icons/io";
 
 interface NavItem {
   label: string;
@@ -14,27 +14,27 @@ interface NavItem {
 
 const NAV_ITEMS: Array<NavItem> = [
   {
-    label: 'Home',
-    page: 'home',
+    label: "Home",
+    page: "home",
   },
   {
-    label: 'About',
-    page: 'about',
+    label: "About",
+    page: "about",
   },
   {
-    label: 'Projects',
-    page: 'projects',
+    label: "Projects",
+    page: "projects",
   },
   {
-    label: 'Resume',
-    page: 'resume',
+    label: "Resume",
+    page: "resume",
   },
 ];
 
 export default function Navbar() {
   const [mounted, setMounted] = useState(false);
   const { systemTheme, theme, setTheme } = useTheme();
-  const currentTheme = theme === 'system' ? systemTheme : theme;
+  const currentTheme = theme === "system" ? systemTheme : theme;
   const [navbar, setNavbar] = useState(false);
 
   useEffect(() => {
@@ -69,17 +69,22 @@ export default function Navbar() {
         <div>
           <div
             className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
-              navbar ? 'block' : 'hidden'
+              navbar ? "block" : "hidden"
             }`}
           >
             <div className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-              {NAV_ITEMS.map((item, idx) => {
-                return (
+              {NAV_ITEMS.map((item, idx) =>
+                item.label === "Resume" ? (
+                  <a key={"RESUME"} download href="/darlan-costa-resume.pdf">
+                    Resume
+                  </a>
+                ) : (
                   <Link
                     key={idx}
                     to={item.page}
+                    href="/resume.pdf"
                     className={
-                      'cursor-pointer block lg:inline-block text-neutral-900  hover:text-neutral-500 dark:text-neutral-100'
+                      "cursor-pointer block lg:inline-block text-neutral-900  hover:text-neutral-500 dark:text-neutral-100"
                     }
                     activeClass="active"
                     spy={true}
@@ -90,18 +95,18 @@ export default function Navbar() {
                   >
                     {item.label}
                   </Link>
-                );
-              })}
-              {currentTheme === 'dark' ? (
+                )
+              )}
+              {currentTheme === "dark" ? (
                 <button
-                  onClick={() => setTheme('light')}
+                  onClick={() => setTheme("light")}
                   className="bg-slate-100 p-2 rounded-xl"
                 >
                   <RiSunLine size={25} color="black" />
                 </button>
               ) : (
                 <button
-                  onClick={() => setTheme('dark')}
+                  onClick={() => setTheme("dark")}
                   className="bg-gray-100 p-2 rounded-xl"
                 >
                   <RiMoonFill size={25} color="black" />
