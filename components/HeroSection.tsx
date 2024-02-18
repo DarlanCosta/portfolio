@@ -26,7 +26,7 @@ const HeroSection = () => {
             <span className="font-semibold text-sky-600">
               Software Developer{" "}
             </span>
-            based in Franca, São Paulo. Crafting innovative solutions that
+            based in Toronto, Ontario. Crafting innovative solutions that
             empower businesses and transform user experiences.
           </p>
           <Link

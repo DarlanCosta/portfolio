@@ -43,7 +43,7 @@ const AboutSection = () => {
               <span className="font-bold">versatile</span>,{" "}
               <span className="font-bold">innovative</span>, and a real{" "}
               <span className="font-bold">team player</span> software developer
-              located in Franca, São Paulo.
+              located in Toronto, Ontario.
             </p>
             <br />
             <p>
