@@ -5,23 +5,39 @@ const skills = [
   { skill: "TypeScript" },
   { skill: "React" },
   { skill: "React Native" },
-  { skill: "Node.js" },
   { skill: "Next.js" },
+  { skill: "Redux" },
+  { skill: "jQuery" },
   { skill: "HTML" },
   { skill: "CSS" },
-  { skill: "Git" },
-  { skill: "GitHub" },
-  { skill: "Docker" },
-  { skill: "PostgreSQL" },
-  { skill: "Oracle" },
+  { skill: "Tailwind CSS" },
+  { skill: "Bootstrap" },
+  { skill: "Node.js" },
+  { skill: "Express" },
+  { skill: "NestJS" },
   { skill: "MySQL" },
+  { skill: "Oracle" },
+  { skill: "PostgreSQL" },
   { skill: "MongoDB" },
   { skill: "Redis" },
+  { skill: "Firebase" },
+  { skill: "Nginx" },
   { skill: "AWS" },
   { skill: "Azure" },
-  { skill: "Nginx" },
-  { skill: "NestJS" },
-  { skill: "GraphQL" },
+  { skill: "Cloud Computing" },
+  { skill: "Docker" },
+  { skill: "Git" },
+  { skill: "Jest" },
+  { skill: "Cypress" },
+  { skill: "Unit Testing" },
+  { skill: "Serverless" },
+  { skill: "Lambda" },
+  { skill: "Microservices" },
+  { skill: "Distributed Systems" },
+  { skill: "CI/CD" },
+  { skill: "Frontend" },
+  { skill: "Backend" },
+  { skill: "Full-Stack" },
 ];
 
 const AboutSection = () => {
@@ -43,7 +59,7 @@ const AboutSection = () => {
               <span className="font-bold">versatile</span>,{" "}
               <span className="font-bold">innovative</span>, and a real{" "}
               <span className="font-bold">team player</span> software developer
-              located in Scarborough, Ontario.
+              located in Toronto, Ontario.
             </p>
             <br />
             <p>
@@ -65,7 +81,7 @@ const AboutSection = () => {
               patterns as a whole.
             </p>
           </div>
-          <div className="text-center md:w-1/2 md:text-left">
+          <div className="text-center md:w-4/6 md:text-left">
             <h1 className="text-2xl font-bold mb-6">My Skills</h1>
             <div className="flex flex-wrap flex-row justify-center z-10 md:justify-start">
               {skills.map((item, idx) => {
