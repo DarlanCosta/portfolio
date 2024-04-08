@@ -15,6 +15,7 @@ const skills = [
   { skill: "Node.js" },
   { skill: "Express" },
   { skill: "NestJS" },
+  { skill: "Python" },
   { skill: "MySQL" },
   { skill: "Oracle" },
   { skill: "PostgreSQL" },
